@@ -39,13 +39,8 @@ body {
 }
 
 #breathe-contain.done {
+    background: url('images/intro-bg2.jpg') center center/cover;
     animation: fadeOut 5s;
-    background:
-        url('images/intro-bg2.jpg') center center/cover;
-}
-
-#breathe-contain.close {
-    display: none;
 }
 
 .breathe-text {
@@ -68,6 +63,20 @@ body {
     animation: grow 3s linear forwards;
 }
 
+#breathe-wrap.shrink {
+    animation: shrink 4s linear forwards;
+}
+
+.fadeIn {
+    animation: fadeIn 5s;
+}
+
+.chapter-container {
+    display: flex;
+    justify-content: center;
+
+}
+
 /*Animations:*/
 @keyframes grow {
     from {
@@ -77,10 +86,6 @@ body {
     to {
         transform: scale(1.4);
     }
-}
-
-#breathe-wrap.shrink {
-    animation: shrink 4s linear forwards;
 }
 
 @keyframes shrink {
