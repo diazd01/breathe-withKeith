@@ -5,9 +5,13 @@ const breatheContainer = document.getElementById('breathe-contain');
 const totalTime = 7500;
 const breatheTime = (totalTime / 5) * 2;
 const holdTime = totalTime / 5;
+let introPlaying = true;
 
-
-breatheAnimation();
+if (introPlaying) {
+    breatheAnimation();
+} else {
+    closeIntro();
+}
 
 function breatheAnimation() {
     breatheContainer.className = 'breathe-contain start';
@@ -23,8 +27,13 @@ function breatheAnimation() {
             breatheContainer.className = 'breathe-contain done';
         }, holdTime);
     }, breatheTime);
+
+    introPlaying = false;
 }
 
+function closeIntro() {
+    breatheContainer.classList.add('close');
+}
 
 
 // setInterval(breatheAnimation, totalTime);
