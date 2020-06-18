@@ -32,11 +32,11 @@ body {
         url('images/intro-bg2.jpg') center center/cover;
 }
 
-#breathe-contain.start {
+/* #breathe-contain.start {
     animation: fadeIn 2s;
     background: linear-gradient(to bottom, rgba(138, 168, 144, 0.8) 100%, rgba(20, 92, 20, 0.8) 0),
         url('images/intro-bg2.jpg') center center/cover;
-}
+} */
 
 #breathe-contain.done {
     background: url('images/intro-bg2.jpg') center center/cover;
