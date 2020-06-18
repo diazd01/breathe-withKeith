@@ -1,4 +1,4 @@
-//Variables
+//Breathe Animation:
 const breatheWrap = document.getElementById('breathe-wrap');
 const breathe = document.querySelector('.breathe-text');
 const breatheContainer = document.getElementById('breathe-contain');
@@ -10,9 +10,9 @@ const chapterContainer = document.querySelector('.chapter-container');
 window.onload = () => {
     breatheAnimation();
 }
-//Functions:
+
 function breatheAnimation() {
-    breatheContainer.className = 'breathe-contain start';
+    // breatheContainer.className = 'breathe-contain start';
     breathe.innerText = 'Breathe';
     breatheWrap.className = 'breatheWrap grow';
 
