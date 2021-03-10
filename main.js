@@ -2,10 +2,11 @@
 const breatheWrap = document.getElementById('breathe-wrap');
 const breathe = document.querySelector('.breathe-text');
 const breatheContainer = document.getElementById('breathe-contain');
-const totalTime = 7500;
+const totalTime = 6500;
 const breatheTime = (totalTime / 5) * 2;
 const holdTime = totalTime / 5;
 const chapterContainer = document.querySelector('.chapter-container');
+const mainSection = document.getElementById('main');
 
 window.onload = () => {
     breatheAnimation();
@@ -15,7 +16,7 @@ function breatheAnimation() {
     // breatheContainer.className = 'breathe-contain start';
     breathe.innerText = 'Breathe';
     breatheWrap.className = 'breatheWrap grow';
-
+    mainSection.style.display = 'none';
     setTimeout(() => {
         breathe.innerText = 'with';
 
@@ -27,8 +28,9 @@ function breatheAnimation() {
     }, breatheTime);
     setTimeout(() => {
         breatheContainer.style.display = 'none';
-        chapterContainer.classList.add('fadeIn');
-    }, 8500);
+        mainSection.style.display = 'block';
+        mainSection.classList.add('fadeIn');
+    }, 6500);
 }
 
 
