@@ -131,12 +131,14 @@ hr {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 
 .main-photo {
     z-index: -1;
     position: absolute;
     order: 1;
+    width: 100%;
 }
 
 .main-pic {
